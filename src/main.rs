@@ -2,10 +2,10 @@
 #![no_std]
 #![no_main]
 
-extern crate baremetal_rust;
+extern crate metalluno;
 
 use avr_delay::delay_ms;
-use baremetal_rust::hal::gpio::{pin, port};
+use metalluno::hal::gpio::{pin, port};
 
 #[no_mangle]
 pub extern "C" fn main() {

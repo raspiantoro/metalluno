@@ -20,13 +20,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "baremetal-rust"
-version = "0.1.0"
-dependencies = [
- "avr_delay",
-]
-
-[[package]]
 name = "const_env--value"
 version = "0.1.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -44,6 +37,13 @@ dependencies = [
  "proc-macro2",
  "quote",
  "syn",
+]
+
+[[package]]
+name = "metalluno"
+version = "0.1.0"
+dependencies = [
+ "avr_delay",
 ]
 
 [[package]]
