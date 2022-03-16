@@ -5,30 +5,38 @@
 extern crate metalluno;
 
 use avr_delay::delay_ms;
-use metalluno::hal::gpio::{pin, port};
+use metalluno::hal::gpio::{pin_b, pin_d, port_b, port_d};
 
 #[no_mangle]
 pub extern "C" fn main() {
-    let port_b = port::PortB::new();
+    let portb = port_b::Parts::new();
+    let portd = port_d::Parts::new();
 
-    let pin_2 = pin::P2::new();
+    let pb2 = pin_b::PB2::new();
+    let pd7 = pin_d::PD7::new();
 
     // set pin as output
-    port_b.p3.into_output();
-    port_b.p5.into_output();
-    pin_2.into_output();
+    portb.pin3.into_output();
+    portb.pin5.into_output();
+    portd.pin6.into_output();
+    pb2.into_output();
+    pd7.into_output();
 
     loop {
-        // set pin 5 high
-        port_b.p3.set_high();
-        port_b.p5.set_high();
-        pin_2.set_high();
+        // set high
+        portb.pin3.set_high();
+        portb.pin5.set_high();
+        portd.pin6.set_high();
+        pb2.set_high();
+        pd7.set_high();
         delay_ms(5000);
 
-        // set pin 5 low
-        port_b.p3.set_low();
-        port_b.p5.set_low();
-        pin_2.set_low();
+        // set low
+        portb.pin3.set_low();
+        portb.pin5.set_low();
+        portd.pin6.set_low();
+        pb2.set_low();
+        pd7.set_low();
         delay_ms(500);
     }
 }
