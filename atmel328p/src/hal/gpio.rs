@@ -1,4 +1,4 @@
-use crate::peripheral::registers::Register;
+use crate::peripheral::Register;
 use core::ptr::{read_volatile, write_volatile};
 
 trait Port {
@@ -37,7 +37,7 @@ macro_rules! gpio {
     ($port_mod: ident, $pin_mod: ident, $dd: expr, $ddr: expr, $register: ty ,[$(($pin_struct: ident, $pin_field: ident, $masks: expr),)+]) => {
         pub mod $port_mod {
             use super::{$pin_mod, Port};
-            use crate::peripheral::registers::{Register, Address};
+            use crate::peripheral::{Register, Address};
 
             pub struct Parts{
                 $(
@@ -65,7 +65,7 @@ macro_rules! gpio {
         }
 
         pub mod $pin_mod{
-            use crate::peripheral::registers::{Register, Address};
+            use crate::peripheral::{Register, Address};
 
             $(
                 pub struct $pin_struct{

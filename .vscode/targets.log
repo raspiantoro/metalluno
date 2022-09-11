@@ -1,0 +1,397 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sun Sep 11 11:25:23 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/mario/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+PLATFORMIO_IDE = 2.5.4
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/mario/project/metalluno
+# makefile
+SHELL = /bin/sh
+# environment
+SNAP_DATA = /var/snap/code/106
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:72521
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+GO111MODULE = on
+# environment
+QT_IM_MODULE = ibus
+# environment
+BALLERINA_HOME = /usr/lib/bal
+# environment
+USERNAME = mario
+# environment
+MAKELEVEL := 0
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=b651c570d7359347368b1561631d5f55
+# environment
+MANAGERPID = 4544
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+LC_NAME = id_ID.UTF-8
+# environment
+VSCODE_CWD = /home/mario/project/metalluno
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/106/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+CGO_ENABLED = 1
+# environment
+SESSION_MANAGER = local/mario-ubuntu:@/tmp/.ICE-unix/4799,unix/mario-ubuntu:/tmp/.ICE-unix/4799
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+PICO_EXAMPLES_PATH = /home/mario/pico/pico/pico-examples
+# environment
+SNAP = /snap/code/106
+# environment
+LIBASOUND_THREAD_SAFE = 0
+# environment
+KUBE_EDITOR = gedit
+# environment
+GOPATH = /home/mario/go
+# environment
+NVM_BIN = /home/mario/.nvm/versions/node/v14.15.0/bin
+# environment
+SNAP_VERSION = 784b0177
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = b032455955634af7b208f623a243a23b
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/106/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+GOBIN = /home/mario/go/bin
+# environment
+DISPLAY = :0
+# environment
+SNAP_INSTANCE_KEY = 
+# environment
+PWD = /home/mario/project/metalluno
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 4733
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+CR_PAT = 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
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/mario
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+PICO_EXTRAS_PATH = /home/mario/pico/pico/pico-extras
+# environment
+VSCODE_CODE_CACHE_PATH = /home/mario/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
+# environment
+LOGNAME = mario
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = Z83ymkY49pknAlPx72WF7bMnScsXYE1LrKhoebuwUssjHQ8edyeH
+# environment
+NVM_CD_FLAGS = 
+# automatic
++F = $(notdir $+)
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/mario/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+LC_TIME = id_ID.UTF-8
+# environment
+SNAP_REAL_HOME = /home/mario
+# environment
+PLATFORMIO_PATH = /home/mario/.platformio/python3/bin:/home/mario/vlang/v:/home/mario/.kn/bin:/home/mario/.gloo/bin:/home/mario/.nvm/versions/node/v14.15.0/bin:/home/mario/.cargo/bin:/home/mario/go/bin:/home/mario/.cargo/bin:/home/mario/go/bin:/home/mario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mario/.istioctl/bin:/home/mario/pico/shell:/home/mario/zeebe:/home/mario/zeebe/camunda-modeler
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+RUST_SRC_PATH = /home/mario/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src
+# environment
+PATH = /home/mario/vlang/v:/home/mario/.kn/bin:/home/mario/.gloo/bin:/home/mario/.nvm/versions/node/v14.15.0/bin:/home/mario/.cargo/bin:/home/mario/go/bin:/home/mario/.cargo/bin:/home/mario/go/bin:/home/mario/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/mario/.istioctl/bin:/home/mario/pico/shell:/home/mario/zeebe:/home/mario/zeebe/camunda-modeler
+# environment
+SNAP_USER_DATA = /home/mario/snap/code/106
+# environment
+SHLVL = 1
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = mario
+# environment
+SNAP_REVISION = 106
+# environment
+LC_MONETARY = id_ID.UTF-8
+# makefile
+.DEFAULT_GOAL := build
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# default
+MAKECMDGOALS := all
+# environment
+LIBVIRT_DEFAULT_URI = qemu:///system
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+LC_TELEPHONE = id_ID.UTF-8
+# environment
+GOLANG_PROTOBUF_REGISTRATION_CONFLICT = ignore
+# default
+MAKE_COMMAND := make
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-c32a2d28-1.71.0-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+NVM_DIR = /home/mario/.nvm
+# environment
+PICO_PLAYGROUND_PATH = /home/mario/pico/pico/pico-playground
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# environment
+LC_PAPER = id_ID.UTF-8
+# default
+SUFFIXES := 
+# environment
+QT_ACCESSIBILITY = 1
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = Z83ymkY49pknAlPx72WF7bMnScsXYE1LrKhoebuwUssjHQ8edyeH
+# environment
+LC_NUMERIC = id_ID.UTF-8
+# automatic
+<F = $(notdir $<)
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+LC_MEASUREMENT = id_ID.UTF-8
+# environment
+SNAP_NAME = code
+# makefile (from 'Makefile', line 1)
+BIN = blinky
+# environment
+LC_ALL = C
+# environment
+DBUS_STARTER_BUS_TYPE = session
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ae6e33de_c14c_4261_8c3a_f530a243cbbf
+# automatic
+^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.108
+# environment
+K3D_FIX_CGROUPV2 = true
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+# environment
+LC_IDENTIFICATION = id_ID.UTF-8
+# default
+.RECIPEPREFIX := 
+# environment
+PICO_SDK_PATH = /home/mario/pico/pico/pico-sdk
+# environment
+LC_ADDRESS = id_ID.UTF-8
+# environment
+OCTOCRAB_GITHUB_TOKEN = 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
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 7903
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=b651c570d7359347368b1561631d5f55
+# variable set hash-table stats:
+# Load=149/1024=15%, Rehash=0, Collisions=29/175=17%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66310, inode 9836887): 16 files, no impossibilities.
+
+# 16 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+flash-maker-uno:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	avrdude -patmega328p -carduino -P/dev/ttyUSB1 -b115200 -D -Uflash:w:target/avr-atmega328p/release/$(BIN).elf:e
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-09-10 22:20:23.611181827
+#  File has been updated.
+#  Successfully updated.
+
+build:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 4):
+	AVR_CPU_FREQUENCY_HZ=16000000 cargo build -Z build-std=core --target avr-atmega328p.json --release
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+set-nightly:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 13):
+	rustup override set nightly-2021-01-07 
+
+flash:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 7):
+	avrdude -patmega328p -carduino -P/dev/ttyACM0 -b115200 -D -Uflash:w:target/avr-atmega328p/release/$(BIN).elf:e
+
+# files hash-table stats:
+# Load=8/1024=1%, Rehash=0, Collisions=1/18=6%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 25 / storage = 241 B / avg = 9 B
+# current buf: size = 8162 B / used = 241 B / count = 25 / avg = 9 B
+
+# strcache performance: lookups = 33 / hit rate = 24%
+# hash-table stats:
+# Load=25/8192=0%, Rehash=0, Collisions=1/33=3%
+# Finished Make data base on Sun Sep 11 11:25:23 2022
+
+ 

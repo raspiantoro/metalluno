@@ -3,4 +3,3 @@
 
 pub mod hal;
 pub mod peripheral;
-pub mod stubs;
