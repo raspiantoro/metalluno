@@ -1,9 +1,12 @@
 [workspace]
 
 members = [
-    "atmel328p",
+    "atmega328p",
+    "uno",
     "utils",
-    "example/blinky-hal-direct",
+    "example/blinky-gpio-direct",
+    "example/blinky-dpin-uno",
+    "example/blinky-led-uno",
 ]
 
 [profile.release]

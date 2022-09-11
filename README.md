@@ -1,3 +1,7 @@
 # Metalluno
 
-learning bare metal programming with rust and arduino uno
+learning bare metal programming with rust.
+
+write hal (hardware abstraction layer) implementions for: 
+- atmega328p 
+- arduino uno

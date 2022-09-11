@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "atmel328p"
+name = "atmega328p"
 version = "0.1.0"
 
 [[package]]
@@ -24,11 +24,29 @@ dependencies = [
 ]
 
 [[package]]
-name = "blinky-hal-direct"
+name = "blinky-dpin-uno"
 version = "0.1.0"
 dependencies = [
- "atmel328p",
  "avr_delay",
+ "uno",
+ "utils",
+]
+
+[[package]]
+name = "blinky-gpio-direct"
+version = "0.1.0"
+dependencies = [
+ "atmega328p",
+ "avr_delay",
+ "utils",
+]
+
+[[package]]
+name = "blinky-led-uno"
+version = "0.1.0"
+dependencies = [
+ "avr_delay",
+ "uno",
  "utils",
 ]
 
@@ -86,6 +104,13 @@ name = "unicode-ident"
 version = "1.0.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "c4f5b37a154999a8f3f98cc23a628d850e154479cd94decf3414696e12e31aaf"
+
+[[package]]
+name = "uno"
+version = "0.1.0"
+dependencies = [
+ "atmega328p",
+]
 
 [[package]]
 name = "utils"

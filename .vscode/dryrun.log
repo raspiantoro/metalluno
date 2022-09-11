@@ -1,5 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/mario/project/metalluno'
-AVR_CPU_FREQUENCY_HZ=16000000 cargo build -Z build-std=core --target avr-atmega328p.json --release
-make: Leaving directory '/home/mario/project/metalluno'
- 
