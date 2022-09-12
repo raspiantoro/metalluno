@@ -71,6 +71,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "hello-usart-direct"
+version = "0.1.0"
+dependencies = [
+ "atmega328p",
+ "avr_delay",
+ "utils",
+]
+
+[[package]]
 name = "proc-macro2"
 version = "1.0.43"
 source = "registry+https://github.com/rust-lang/crates.io-index"
