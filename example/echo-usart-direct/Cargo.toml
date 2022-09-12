@@ -1,0 +1,12 @@
+[package]
+name = "echo-usart-direct"
+version = "0.1.0"
+edition = "2018"
+authors = ["Mario Raspiantoro <raspiantoro@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+avr_delay = { git = "https://github.com/avr-rust/delay", tag = "0.3.2" }
+utils = {path="../../utils"}
+atmega328p = {path="../../atmega328p"}

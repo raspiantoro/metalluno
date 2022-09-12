@@ -3,6 +3,9 @@ use crate::peripheral::register::{Address, Register};
 // Data register empty flag, bit 5 of UCSR0A
 const UDRE0: u8 = 1 << 5;
 
+// Receive Complete flag, bit 7 of UCSR0A
+const RXC0: u8 = 1 << 7;
+
 // USART baud rate register 0
 struct UBRR0 {
     _high: Register,
@@ -85,5 +88,30 @@ impl USART0 {
         self.write(s);
         let new_line = "\n";
         self.write(new_line);
+    }
+
+    pub fn recv(&mut self) -> char {
+        unsafe {
+            while (core::ptr::read_volatile(self.control_register.a.get()) & RXC0) == 0 {}
+            core::ptr::read_volatile(self.data_register.get() as *const char)
+        }
+    }
+
+    pub fn readln(&mut self) -> [u8; 100] {
+        let mut cs: [u8; 100] = [0; 100];
+        let mut counter: usize = 0;
+
+        loop {
+            let c = self.recv() as u8;
+
+            if c == 10 {
+                break;
+            }
+
+            cs[counter] = c;
+            counter += 1;
+        }
+
+        cs
     }
 }

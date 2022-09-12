@@ -8,6 +8,7 @@ members = [
     "example/blinky-dpin-uno",
     "example/blinky-led-uno",
     "example/hello-usart-direct",
+    "example/echo-usart-direct",
 ]
 
 [profile.release]
